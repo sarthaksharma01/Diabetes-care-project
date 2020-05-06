@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+
+body{
+    background-color: black;
+    background-image: url("../images/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    opacity: inherit; 
+
+}
+
+#logo{
+    height: 150px;
+    width: 200px;
+    margin-top: 0%;
+}
+
+
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  border: 3px solid #fff;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#result {
+  font-size: 36px;
+  font-weight: 100px;
+  color:white;;
+}
+#logoimg{
+    height: 120px;
+    width: 120px;
+}
+#ans {
+  color: rgb(234, 238, 15);
+  padding: 20px;
+  font-size: 26px;
+  background: transparent;
+  border: 0; 
+}
+
+#ans:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+#movebtn{
+    margin-left: -26px;
+    margin-top: 10px;
+    display: none;
+}
+
+

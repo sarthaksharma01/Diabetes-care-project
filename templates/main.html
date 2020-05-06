@@ -1,0 +1,139 @@
+<!-- <!doctype html>
+<html>
+
+<head>
+    <title>Diabetes prediction Model</title>
+</head>
+<form action="{{ url_for('main') }}" method="POST">
+    <fieldset>
+        <legend>Input values:</legend>
+        pregnancies:
+        <input name="Pregnancies" type="number" required>
+        <br>
+        <br> Glucose:
+        <input name="Glucose" type="number" required>
+        <br>
+        <br> Blood Pressure:
+        <input name="BloodPressure" type="number" required>
+        <br>
+        <br> Skin Thickness:
+        <input name="SkinThickness" type="number" required>
+        <br>
+        <br> Insulin:
+        <input name="Insulin" type="number" required>
+        <br>
+        <br> BMI:
+        <input name="BMI" type="number" required>
+        <br>
+        <br> DiabetesPedigreeFunction:
+        <input name="DiabetesPedigreeFunction" type="number" required>
+        <br>
+        <br> Age:
+        <input name="Age" type="number" required>
+        <br>
+        <input type="submit">
+    </fieldset>
+</form>
+<br>
+<div class="result" align="center">
+    {% if result==1 %}
+        <p>Hi there</p>
+         {% for variable, value in original_input.items() %}
+            <b>{{ variable }}</b> : {{ value }}
+        {% endfor %}
+        <br>
+        <br> Predicted number of bikes in use:
+           <p style="font-size:50px">there are 75.7% chances that you have diabetes </p>
+    
+    {% elif result==0 %}
+        <p>You do not have diabetes</p>
+    {% endif %}
+</div>
+</html> -->
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Diabetes prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html { width: 100%; height:100%; overflow:hidden; }
+
+body { 
+	width: 100%;
+	height:200%;
+	font-family: 'Helvetica';
+	background: #000;
+	color: #fff;
+	font-size: 24px;
+	text-align:center;
+	letter-spacing:1.4px;
+
+}
+.login { 
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:400px;
+	height:400px;
+}
+
+.login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
+
+input { 
+	width: 100%; 
+	margin-bottom: 10px; 
+	background: rgba(0,0,0,0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+</style>
+
+</head>
+
+<body style="background: #000;">
+ <div class="login">
+	<h1>Diabetes prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('main')}}"method="post">
+    	<legend>Input values:</legend>
+        <input name="Pregnancies" type="text" placeholder="pregnancies" required>
+        <input name="Glucose" type="text" placeholder="Glucose" required>
+        <input name="BloodPressure" type="text" placeholder="Blood Pressure" required>
+        <input name="SkinThickness" type="text" placeholder="Skin Thickness" required>
+        <input name="Insulin" type="text" placeholder="Insulin" required>
+        <input name="BMI" type="text" placeholder="BMI" required>
+        <input name="DiabetesPedigreeFunction" type="text" placeholder="DiabetesPedigreeFunction" required>
+        <input name="Age" type="text" placeholder="Age" required>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ result }}
+   
+
+ </div>
+</body>
+</html>

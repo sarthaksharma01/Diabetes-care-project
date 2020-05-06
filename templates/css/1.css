@@ -1,0 +1,51 @@
+body{
+	background-image: url("../images/GrandGraciousGallinule-max-1mb.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	 
+}
+
+.card-img-top{
+	width: 284px;
+	height: 200px;
+
+}
+.card-img-top1{
+
+    width: 284px;
+    height: 176px;
+}
+    
+.card{
+	border: 2px solid #000;
+	background-color: white;
+	margin-left: 170px;
+	margin-top: 50px;
+    display: inline-block;
+    
+	
+
+}
+
+.card-title{
+	text-align: center;
+	margin-top: 3px;
+	text-shadow: currentColor;
+	font-size: 20px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	 
+}
+#h5
+{
+	font-size: 16px;
+}
+.btn btn-success{
+
+margin-bottom:1px ;
+margin-left: 10px;
+}
+
+#d1{
+	margin-left:250px;
+}

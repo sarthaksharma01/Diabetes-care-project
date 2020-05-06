@@ -1,0 +1,14 @@
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 20px;
+    color: coral;
+}
+pre{
+    color: white;
+}
+body{
+    background-color: black;
+}
+#video{
+    margin-left: 340px;
+}

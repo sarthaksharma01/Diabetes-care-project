@@ -1,0 +1,44 @@
+body{
+	background-image: url("../images/tumblr_nz20d8RdHK1relaado1_400.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	 
+}
+
+.card-img-top{
+	width: 284px;
+	height: 200px;
+
+}
+.card{
+	border: 2px solid #000;
+	background-color: white;
+	margin-left: 20px;
+	margin-top: 30px;
+	display: inline-block;
+	
+
+}
+
+.card-title{
+	text-align: center;
+	margin-top: 3px;
+	text-shadow: currentColor;
+	font-size: 20px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	 
+}
+#h5
+{
+	font-size: 16px;
+}
+.btn btn-success{
+align-self:center;
+margin-bottom:10px ;
+margin-left: 100px;
+}
+
+#d1{
+	margin-left:250px;
+}
